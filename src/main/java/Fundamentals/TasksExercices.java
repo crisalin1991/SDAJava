@@ -3,11 +3,16 @@ package Fundamentals;
 import java.util.Scanner;
 
 public class TasksExercices {
-    public static void main(String[] args) {
+    public static float pi = (float) Math.PI;
+
+    int x = 10;
+    static int y=1;
+
+    public static void perimeters(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Insert diameter:");
         float diameter = scanner.nextFloat();
-        float pi = (float) Math.PI;
-        System.out.println("the perimeter has the flowing lenght:" + diameter*pi);
+        System.out.println("The perimeter has the flowing lenght:" + diameter * pi);
+
     }
 }
