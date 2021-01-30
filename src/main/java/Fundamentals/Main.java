@@ -18,5 +18,6 @@ public class Main {
         //Task1
         tasksExercices1.perimeters();
         TasksExercices.printAllPrimeNumbers();
+        TasksExercices.longestWord();
     }
 }

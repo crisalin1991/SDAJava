@@ -77,5 +77,29 @@ public class TasksExercices {
             break;
         }
         return isPrimeNo;
+
+        //Write an application that will read texts
+        // (variables of the String type) until the user gives the text "Enough!"
+        // and then writes the longest of the given texts (not including the text "Enough!").
+        // If the user does not provide any text,
+        // write "No text provided".
+    }
+
+    public static void longestWord() {
+        System.out.println("Type your word");
+        Scanner scanner = new Scanner(System.in);
+        String word = "";
+        String longestWord1 = "";
+        while (!word.equals("Enough")) {
+            word = scanner.next();
+            if (longestWord1.length() < word.length() && !word.equals("Enough")) {
+                longestWord1 = word;
+            }
+        }
+        if (longestWord1.length() == 0) {
+            System.out.println("No text provide");
+            return;
+        }
+        System.out.println("longest word is: " + longestWord1);
     }
 }
