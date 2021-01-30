@@ -52,6 +52,21 @@ public class TasksExercices {
         return isPrimeNo;
     }
 
+    private static boolean isPrime3(int nr) {
+        if (nr == 2) {
+            return true;
+        }
+        if (nr == 0 || nr == 1 || nr % 2 == 0) {
+            return false;
+        }
+        for (int i = 3; i * i <= nr; i += 2) {
+            if (nr % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     private static boolean isPrime2(int nr) {
         boolean isPrimeNo = true;
         for (int i = 2; i <= nr / 2; i++) {
