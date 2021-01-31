@@ -17,7 +17,6 @@ public class Main {
         System.out.println("y1=" + TasksExercices.y);
         System.out.println("y2=" + TasksExercices.y);
 
-
         //Task1
         TasksExercices.perimeters();
         TasksExercices.printAllPrimeNumbers();

@@ -66,6 +66,7 @@ public class TasksExercices {
         System.out.println(true);
         System.out.println(true);
     }
+
     public static void testObjects() {
         dog dog1 = new dog("Azorel");
         dog1.setName("Azorel");
