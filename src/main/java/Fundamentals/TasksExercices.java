@@ -42,49 +42,6 @@ public class TasksExercices {
         return true;
     }
 
-    private static boolean isPrime1(int nr) {
-        boolean isPrimeNo = true;
-        for (int i = 2; i <= nr / 2; i++) {
-            if (nr % i == 0) {
-                isPrimeNo = false;
-            }
-        }
-        return isPrimeNo;
-    }
-
-    private static boolean isPrime3(int nr) {
-        if (nr == 2) {
-            return true;
-        }
-        if (nr == 0 || nr == 1 || nr % 2 == 0) {
-            return false;
-        }
-        for (int i = 3; i * i <= nr; i += 2) {
-            if (nr % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private static boolean isPrime2(int nr) {
-        boolean isPrimeNo = true;
-        for (int i = 2; i <= nr / 2; i++) {
-            if (nr % i == 0) {
-                continue;
-            }
-            isPrimeNo = false;
-            break;
-        }
-        return isPrimeNo;
-
-        //Write an application that will read texts
-        // (variables of the String type) until the user gives the text "Enough!"
-        // and then writes the longest of the given texts (not including the text "Enough!").
-        // If the user does not provide any text,
-        // write "No text provided".
-    }
-
     public static void longestWord() {
         System.out.println("Type your word");
         Scanner scanner = new Scanner(System.in);
@@ -101,5 +58,25 @@ public class TasksExercices {
             return;
         }
         System.out.println("longest word is: " + longestWord1);
+    }
+
+
+    public static void testString() {
+        System.out.println(true);
+        System.out.println(true);
+        System.out.println(true);
+    }
+
+    public static void testObjects() {
+        dog dog1 = new dog("Azorel");
+        dog1.setName("Azorel");
+
+        dog dog2 = new dog("Azorel");
+        dog1.setName("Azorel");
+
+        System.out.println((dog1.equals(dog2)));
+        System.out.println(dog1.equals(dog2));
+
+
     }
 }
