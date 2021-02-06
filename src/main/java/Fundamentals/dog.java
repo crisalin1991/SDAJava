@@ -19,5 +19,4 @@ public class dog {
         return(this.name.equals(dog.getName()));
     }
 
-
 }
