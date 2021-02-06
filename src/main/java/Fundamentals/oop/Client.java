@@ -10,6 +10,11 @@ public class Client {
         this.cnp = cnp;
         this.bankAccount = bankAccount;
     }
+    public Client(String name, String cnp){
+        this.name = name;
+        this.cnp = cnp;
+        this.bankAccount = new BankAccount();
+    }
 
     public Client() {
         this.bankAccount = new BankAccount();

@@ -4,17 +4,37 @@ public class BankAccount {
     private String type;
     private double balance;
     private String currency;
+    private String accountType;
 
-    public BankAccount(String type, String currency){
+    public BankAccount(String type, String currency) {
         this.type = type;
         this.currency = currency;
         this.balance = 0;
     }
 
-    public BankAccount(){
+    public BankAccount() {
         this.type = "SAVING";
         this.currency = "USD";
         this.balance = 0;
+    }
+
+    public void AddMoney(double newMoney) {
+        if (this.accountType == "SPENDING") {
+            System.out.println("Please add at least 10% of actual balance");
+        } else {
+            this.balance += newMoney;
+        }
+        return;
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountType='" + accountType + '\'' +
+                ",balance=" + balance +
+                ",currency = " + currency + '\'' +
+                '}';
+
     }
 
     public String getType() {
